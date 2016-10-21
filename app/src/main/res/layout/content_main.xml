@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.toshiba.ujicoba.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+   <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/g"
+        android:background="#dc4a38"
+        android:id="@+id/imageButton6"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/FB"
+        android:id="@+id/imageButton"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#3b5998"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="or"
+        android:ems="10"
+        android:layout_marginTop="18dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/imageButton"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:text="name@sample.com"
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/editText3" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginTop="14dp"
+        android:id="@+id/editText4"
+        android:text="password" />
+
+    <Button
+        android:text="Sign"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button"
+        android:textColor="#ffffff"
+        android:background="@android:color/background_dark"
+        android:layout_below="@+id/editText4"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="forgot password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
